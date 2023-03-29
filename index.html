@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TO-DO-LIST</title>
+        <link rel="stylesheet" href="to-do-list.css">
+        <script src="to-do-list.js"></script>
+    </head>
+    <body>
+        <div class="heading">
+            <p>To-Do List Web App</p>
+        </div>
+        <section class="main-body">
+            <div class="input-section">
+                <input type="text" placeholder="Title" id="title" required><br>
+                <textarea id="Description" placeholder="Description" required></textarea><br>
+                <button id="btn" onclick="save3()" type="submit">Save</button>
+            </div>
+            <div class="display">
+                <div class="nav">
+                    <li>Title</li>
+                    <li>Description</li>
+                    <li>Delete</li>
+                </div>
+                <div id="div1">
+                    <p id="para"></p>
+                    <p id="desc"></p>
+                    <div id="cancel" onclick="canceled()">
+                        <p id="cancel-icon"></p>
+                    </div>
+                    <!-- <p id="break"></p> -->
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
